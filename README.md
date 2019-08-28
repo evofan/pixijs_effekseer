@@ -10,3 +10,6 @@ reference
 
 **はじめてのEffekseer (I・O BOOKS)**  
 [https://www.amazon.co.jp/dp/4777520765/](https://www.amazon.co.jp/dp/4777520765/)  
+
+**gstatsjs**  
+[https://github.com/eXponenta/gstatsjs](https://github.com/eXponenta/gstatsjs)  

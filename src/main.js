@@ -12,6 +12,12 @@ let canvas = document.getElementById("canvas");
 canvas.appendChild(app.view);
 app.renderer.backgroundColor = 0x000000;
 app.stage.interactive = true;
+
+// PIXI & Stats.js
+let pixiHooks = new GStats.PIXIHooks(app);
+let stats = new GStats.StatsJSAdapter(pixiHooks);
+document.body.appendChild(stats.stats.dom || stats.stats.domElement);
+
 let bg, start;
 let anim;
 let anim_speed = 0.5;
@@ -113,6 +119,6 @@ function onAssetsLoaded(loader, res) {
 
   // Enter Frame
   app.ticker.add(delta => {
-    //
+    stats.update();
   });
 }
